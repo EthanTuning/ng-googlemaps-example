@@ -1,0 +1,26 @@
+h1 {
+    text-align: center;
+    color: ;
+    font-size: ;
+    font-weight: ;
+}
+
+h2 {
+    text-align: center;
+    color: ;
+    font-size: ;
+    font-weight: ;
+}
+
+#controls-container {
+
+}
+
+#map-container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+#map {
+    height: 80vh;
+}
