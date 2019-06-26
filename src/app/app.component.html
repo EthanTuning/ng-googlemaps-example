@@ -1,10 +1,16 @@
 <h1>Welcome</h1>
 <h2>This is an example usage of Google Maps in Angular</h2>
 <div id="controls-container">
-
+  <h3>Latitude: {{ lat }}</h3>
+  <h3>Longtitude: {{ long }}</h3>
+  <button type="button">Get Location</button>
 </div>
 <div id="map-container">
-  <agm-map id="map" [latitude]="initialLat" [longitude]="initialLong">
-    <agm-marker [latitude]="initialLat" [longitude]="initialLong"></agm-marker>
+  <agm-map id="map" [latitude]="lat" [longitude]="long" [zoom]="zoom">
+    <agm-marker [latitude]="lat" 
+                [longitude]="long" 
+                [markerDraggable]="true"
+                (dragEnd)="markerDrag($event)">
+    </agm-marker>
   </agm-map>
 </div>
