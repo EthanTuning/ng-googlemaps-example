@@ -36,6 +36,28 @@ export class AppComponent implements OnInit {
     this.zoom = 15;
     this.searchControl = new FormControl();
 
+    this.mapsAPILoader.load().then(() => {
+
+      let autocomplete = new google.maps.places.Autocomplete(this.searchElementRef.nativeElement);
+
+      autocomplete.addListener("place_changed", () => {
+
+        this.ngZone.run(() => {
+
+          let place: google.maps.places.PlaceResult = autocomplete.getPlace();
+
+          if (place.geometry === undefined || place.geometry === null) {
+          
+            return;
+          
+          }
+
+        });
+
+      });
+
+    });
+
   }
 
   markerDrag($event: MouseEvent) {
