@@ -52,6 +52,9 @@ export class AppComponent implements OnInit {
           
           }
 
+          this.lat = place.geometry.location.lat();
+          this.long = place.geometry.location.lng();
+
         });
 
       });
