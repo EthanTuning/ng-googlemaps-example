@@ -3,7 +3,7 @@
 <div id="controls-container">
   <h3>Latitude: {{ lat }}</h3>
   <h3>Longtitude: {{ long }}</h3>
-  <button type="button">Get Current Location</button>
+  <button type="button" (click)="getClientCurrentLocation()">Get Current Location</button>
   <div id="search-container">
     <label>Search Places</label>
     <input type="text" placeholder="Search" autocorrect="off" autocapitalize="off" spellcheck="off" #search [formControl]="searchControl">    

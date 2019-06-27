@@ -72,7 +72,16 @@ export class AppComponent implements OnInit {
 
   private getClientCurrentLocation() {
 
+    if("geolocation" in navigator) {
 
+      navigator.geolocation.getCurrentPosition((position) => {
+      
+        this.lat = position.coords.latitude;
+        this.long = position.coords.longitude;
+
+      });
+
+    }
 
   }
 
