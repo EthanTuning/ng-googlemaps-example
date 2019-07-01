@@ -70,7 +70,7 @@ export class AppComponent implements OnInit {
 
   }
 
-  private getClientCurrentLocation() {
+  getClientCurrentLocation() {
 
     if("geolocation" in navigator) {
 
