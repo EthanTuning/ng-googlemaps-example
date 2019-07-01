@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AgmCoreModule } from '@agm/core';
 
 import { AppComponent } from './app.component';
-import apiConfig from './keys.json';
+import apiConfig from '../keys.json';
 
 @NgModule({
   declarations: [
