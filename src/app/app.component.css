@@ -1,37 +1,93 @@
 h1 {
     text-align: center;
-    color: ;
-    font-size: ;
-    font-weight: ;
+    color: #E64B3B;
+    font-size: 4.5rem;
+    font-weight: 600;
+    padding: 0;
+    padding-bottom: 1.5rem;
+    margin: 0;
 }
 
 h2 {
     text-align: center;
-    color: ;
-    font-size: ;
-    font-weight: ;
-}
-
-h3 {
-    text-align: center;
-    color: ;
-    font-size: ;
-    font-weight: ;
-}
-
-button {
-
+    color: #3497DB;
+    font-size: 2.25rem;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
 }
 
 #controls-container {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     text-align: center;
+}
+
+#controls-container h3 {
+    text-align: left;
+    color: #E64B3B;
+    font-size: 1.75rem;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+}
+
+#controls-container h3 span {
+    color: #3497DB;
+    font-weight: 400;
+}
+
+#controls-container button {
+    color: #ffffff;
+    background: #E64B3B;
+    border-radius: 30px;
+    border: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding-top: 1rem;
+    padding-bottom: .75rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    margin-top: .75rem;
+    margin-bottom: 1.5rem;
+}
+
+#search-container {
+    text-align: left;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+
+}
+
+#search-container label {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #E64B3B;
+    font-style: italic;
+}
+
+#search-container input {
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    height: 2rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-indent: 20px;
 }
 
 #map-container {
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 #map {
-    height: 80vh;
+    height: 70vh;
 }

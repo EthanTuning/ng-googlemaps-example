@@ -1,12 +1,16 @@
 <h1>Welcome</h1>
-<h2>This is an example usage of Google Maps in Angular</h2>
+<h2>
+  This is an example of
+  Google Maps in Angular
+</h2>
 <div id="controls-container">
-  <h3>Latitude: {{ lat }}</h3>
-  <h3>Longtitude: {{ long }}</h3>
+  <h3>Latitude: <span>{{ lat }}</span></h3>
+  <h3>Longtitude: <span>{{ long }}</span></h3>
   <button type="button" (click)="getClientCurrentLocation()">Get Current Location</button>
   <div id="search-container">
-    <label>Search Places</label>
-    <input type="text" placeholder="Search" autocorrect="off" autocapitalize="off" spellcheck="off" #search [formControl]="searchControl">    
+    <label>Search Places:</label>
+    <br/>
+    <input type="text" autocorrect="off" autocapitalize="off" spellcheck="off" #search [formControl]="searchControl">    
   </div>
 </div>
 <div id="map-container">
